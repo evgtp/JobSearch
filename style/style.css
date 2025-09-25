@@ -1,0 +1,97 @@
+@font-face {
+   font-family: "Axiforma Book";
+   src: url(../fonts/Axiforma/Axiforma\ Book.otf);
+}
+@font-face {
+   font-family: "Axiforma SemiBold";
+   src: url(../fonts/Axiforma/Axiforma\ SemiBold.otf);
+}
+@font-face {
+   font-family: "Axiforma Bold";
+   src: url(../fonts/Axiforma/Axiforma\ Bold.otf);
+}
+
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+a {
+   text-decoration: none;
+}
+ul,
+ol,
+li {
+   list-style: none;
+}
+img {
+   vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+html,
+body {
+   height: 100%;
+   line-height: 1;
+}
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+
+._container {
+   max-width: 1170px;
+   margin: 0 auto;
+}
+
+/* --------HEADER------------------------------------------- */
+
+.header {
+}
+.header__container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 57px 0;
+}
+.header__logo {
+}
+.header__menu {
+}
+.menu {
+}
+.menu__list {
+   display: flex;
+   flex-direction: row;
+   gap: 40px;
+   line-height: calc(28 / 15 * 100%);
+}
+.menu__item {
+}
+.menu__link {
+   color: #353540;
+   font-family: "Axiforma Book";
+}
+.menu__link:hover {
+   text-decoration: underline;
+}
+.menu__button {
+   font-size: 20px;
+   line-height: calc(33 / 20 * 100%);
+   padding: 19px 30px;
+   border-radius: 10px;
+   background: #ee4f3c;
+   color: #fff;
+   font-family: "Axiforma SemiBold";
+}
