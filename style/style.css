@@ -10,6 +10,14 @@
    font-family: "Axiforma Bold";
    src: url(../fonts/Axiforma/Axiforma\ Bold.otf);
 }
+@font-face {
+   font-family: "Georgia";
+   src: url(../fonts/Geargia/Georgia.woff2);
+}
+@font-face {
+   font-family: "Georgia Bold";
+   src: url(../fonts/Geargia/Georgia-Bold.woff2);
+}
 
 *,
 *::before,
@@ -38,16 +46,21 @@ h5,
 h6 {
    font-weight: inherit;
    font-size: inherit;
+   font-family: "Georgia Bold";
 }
 html,
 body {
    height: 100%;
    line-height: 1;
+   font-family: "Axiforma Book";
+   color: #5d5d61;
 }
 
 .wrapper {
    min-height: 100%;
    overflow: hidden;
+   display: flex;
+   flex-direction: column;
 }
 
 ._container {
@@ -58,16 +71,21 @@ body {
 /* --------HEADER------------------------------------------- */
 
 .header {
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 100%;
 }
 .header__container {
    display: flex;
-   justify-content: space-between;
    align-items: center;
-   padding: 57px 0;
+   padding: 50px 0;
 }
 .header__logo {
 }
 .header__menu {
+   margin-left: 223px;
 }
 .menu {
 }
@@ -75,13 +93,13 @@ body {
    display: flex;
    flex-direction: row;
    gap: 40px;
-   line-height: calc(28 / 15 * 100%);
 }
 .menu__item {
 }
 .menu__link {
    color: #353540;
-   font-family: "Axiforma Book";
+   font-size: 18px;
+   line-height: calc(28 / 18 * 100%);
 }
 .menu__link:hover {
    text-decoration: underline;
@@ -93,5 +111,203 @@ body {
    border-radius: 10px;
    background: #ee4f3c;
    color: #fff;
+   font-family: "Axiforma SemiBold";
+   margin-left: auto;
+}
+
+.page {
+   flex: 1 1 auto;
+}
+.page__main-block {
+   display: flex;
+   height: 100vh;
+   background-image: url(/image/header/cover.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   /* background-position: 20px 20px; */
+}
+.main-block {
+}
+.main-block__container {
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+.main-block__body {
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+   max-width: 658px;
+}
+.main-block__content {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+.main-block__title {
+   font-size: 72px;
+   line-height: 95px;
+   font-weight: 700;
+}
+.main-block__text {
+   color: #5d5d61;
+   font-size: 18px;
+   line-height: calc(34 / 18 * 100%);
+}
+
+.main-block__search {
+   position: relative;
+   .search__line {
+      position: absolute;
+      width: 40px;
+      height: 2px;
+      background-color: #cccccc;
+      left: 210px;
+      transform: rotate(90deg);
+      top: 34px;
+      z-index: 2;
+   }
+}
+
+.search__form {
+   display: inline-flex;
+}
+.search__job {
+   padding: 23px 0px 22px 60px;
+   border-right: none;
+   border-radius: 10px 0 0 10px;
+   font-size: 16px;
+   line-height: calc(25 / 16 * 100%);
+   background-color: #fff;
+   z-index: 1;
+   background: url(../image/search/bytesize_search.svg) 20px 25px no-repeat;
+   background-color: #fff;
+}
+.search__map {
+   padding: 23px 0 22px 31px;
+   border-left: none;
+   border-right: none;
+   font-size: 16px;
+   line-height: calc(25 / 16 * 100%);
+   background-color: #fff;
+   box-shadow: 0px 30px 70px 0px #cccccc80;
+   background: url(../image/search/el_map-marker.svg) 0px 23px no-repeat;
+   background-color: #fff;
+}
+.search__button {
+   background: #ee4f3c;
+   padding: 19px 54px 18px 54px;
+   font-family: "Axiforma SemiBold";
+   font-size: 20px;
+   color: #fff;
+   border-radius: 0 10px 10px 0;
+   line-height: calc(33 / 20 * 100%);
+}
+
+/* ------------POPULAR-JOB-------------------------------------- */
+
+.page__popular-jop {
+   background: #232443;
+   background-image: url(../image/popular_job/bgi_popular-job.svg);
+   margin-top: -60px;
+}
+.popular-job {
+}
+.popular-job__container {
+}
+.popular-job__body {
+}
+.popular-job__title {
+}
+.title-block {
+   font-size: 48px;
+   line-height: calc(78 / 45 * 100%);
+   letter-spacing: 5%;
+   color: #ffffff;
+}
+.popular-jop__wrapper {
+   display: flex;
+   gap: 30px;
+}
+.popular-job__column {
+   border-radius: 20px;
+   padding: 20px;
+}
+.column-job {
+   background: #ffffff;
+   .column-job__name img {
+      padding: 13px 12px 12px 13px;
+      border-radius: 50%;
+      background-color: #fff;
+      box-shadow: 0px 4px 50px 0px #99999940;
+      margin-right: 15px;
+   }
+   .job-text__title {
+      font-size: 24px;
+      line-height: 100%;
+   }
+}
+.column-job__active {
+   background: #ee4f3c80;
+   color: #fff;
+   .column-job__name img {
+      margin-right: 15px;
+   }
+   .job-text__title {
+      color: #fff;
+      font-size: 24px;
+      line-height: 100%;
+   }
+   .job-text__info {
+      color: #fff;
+      font-size: 16px;
+      line-height: 100%;
+   }
+   .column-job__button {
+      color: #fff;
+   }
+}
+.column-job__company {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.column-job__name {
+   color: #353540;
+   font-size: 20px;
+   line-height: calc(33 / 20 * 100%);
+   display: flex;
+   align-items: center;
+}
+.column-job__person {
+}
+.column-job__text {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+}
+.job-text {
+}
+.job-text__title {
+}
+.job-text__info {
+}
+.column-job__choice {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.column-job__buttons {
+   display: flex;
+}
+.column-job__button {
+   padding: 8px 21px 5px 21px;
+   background: #ffffff1a;
+   border-radius: 5px;
+   font-size: 14px;
+   line-height: calc(22 / 14 * 100%);
+   color: #5d5d61;
+}
+.column-job__salary {
    font-family: "Axiforma SemiBold";
 }
