@@ -50,26 +50,30 @@
                      </div>
                      <div class="main-block__search">
                         <form action="#" class="search__form">
-                           <input
-                              autocomplete="off"
-                              type="text"
-                              required
-                              name="form[]"
-                              placeholder="Job title or Keyword"
-                              class="search__job"
-                           />
-                           <span class="search__line"></span>
-                           <input
-                              autocomplete="off"
-                              type="text"
-                              required
-                              name="form[]"
-                              placeholder="Location"
-                              class="search__map"
-                           />
-                           <button type="submit" class="search__button">
-                              Search
-                           </button>
+                           <div class="form__wrapper">
+                              <input
+                                 autocomplete="off"
+                                 type="text"
+                                 required
+                                 name="form[]"
+                                 placeholder="Job title or Keyword"
+                                 class="search__job"
+                              />
+                              <div class="search__wrapper">
+                                 <span class="search__line"></span>
+                                 <input
+                                    autocomplete="off"
+                                    type="text"
+                                    required
+                                    name="form[]"
+                                    placeholder="Location"
+                                    class="search__map"
+                                 />
+                              </div>
+                              <button type="submit" class="search__button">
+                                 Search
+                              </button>
+                           </div>
                         </form>
                      </div>
                   </div>
@@ -82,110 +86,320 @@
                         <h2 class="title-block">Popular Job Posts</h2>
                      </div>
                      <div class="popular-jop__wrapper">
-                        <div class="popular-job__column column-job__active">
-                           <div class="column-job__company">
-                              <div class="column-job__name">
-                                 <img
-                                    src="/image/popular_job/slack.svg"
-                                    alt="Slack"
-                                 />Slack
+                        <div class="popular-jop__columns">
+                           <div class="popular-job__column column-job__active">
+                              <div class="column-job__company">
+                                 <div class="column-job__name">
+                                    <img
+                                       src="/image/popular_job/grommet-icons_slack.svg"
+                                       alt="Slack"
+                                    />Slack
+                                 </div>
+                                 <div class="column-job__person">
+                                    <img
+                                       src="/image/popular_job/slack-person.svg"
+                                       alt="slack"
+                                    />
+                                 </div>
                               </div>
-                              <div class="column-job__person">
-                                 <img
-                                    src="/image/popular_job/slack-person.svg"
-                                    alt="slack"
-                                 />
+                              <div class="column-job__text job-text">
+                                 <div class="job-text__title">
+                                    <h4>Sr. Product Designer</h4>
+                                 </div>
+                                 <div class="job-text__info">
+                                    Full Time - New York City
+                                 </div>
+                              </div>
+                              <div class="column-job__choice">
+                                 <div class="column-job__buttons">
+                                    <a href="#" class="column-job__button"
+                                       >Remote</a
+                                    >
+                                    <a href="#" class="column-job__button"
+                                       >Anywhere</a
+                                    >
+                                 </div>
+                                 <div class="column-job__salary">
+                                    $10k - $25k
+                                 </div>
                               </div>
                            </div>
-                           <div class="column-job__text job-text">
-                              <div class="job-text__title">
-                                 <h4>Sr. Product Designer</h4>
+                           <div class="popular-job__column column-job">
+                              <div class="column-job__company">
+                                 <div class="column-job__name">
+                                    <img
+                                       src="/image/popular_job/flat-color-icons_google.svg"
+                                       alt="Google"
+                                    />Google
+                                 </div>
+                                 <div class="column-job__person">
+                                    <img
+                                       src="/image/popular_job/google_person.svg"
+                                       alt="google"
+                                    />
+                                 </div>
                               </div>
-                              <div class="job-text__info">
-                                 Full Time - New York City
+                              <div class="column-job__text job-text">
+                                 <div class="job-text__title">
+                                    <h4>UX Researcher</h4>
+                                 </div>
+                                 <div class="job-text__info">
+                                    Full Time - United States
+                                 </div>
+                              </div>
+                              <div class="column-job__choice">
+                                 <div class="column-job__buttons">
+                                    <a href="#" class="column-job__button"
+                                       >Remote</a
+                                    >
+                                    <a href="#" class="column-job__button"
+                                       >Anywhere</a
+                                    >
+                                 </div>
+                                 <div class="column-job__salary">
+                                    $10k - $25k
+                                 </div>
                               </div>
                            </div>
-                           <div class="column-job__choice">
-                              <div class="column-job__buttons">
-                                 <a href="#" class="column-job__button"
-                                    >Remote</a
-                                 >
-                                 <a href="#" class="column-job__button"
-                                    >Anywhere</a
-                                 >
+                           <div class="popular-job__column column-job">
+                              <div class="column-job__company">
+                                 <div class="column-job__name">
+                                    <img
+                                       src="/image/popular_job/simple-icons_indeed.svg"
+                                       alt="Indeed"
+                                    />Indeed
+                                 </div>
+                                 <div class="column-job__person">
+                                    <img
+                                       src="/image/popular_job/indeed-person.svg"
+                                       alt="indeed"
+                                    />
+                                 </div>
                               </div>
-                              <div class="column-job__salary">$10k - $25k</div>
+                              <div class="column-job__text job-text">
+                                 <div class="job-text__title">
+                                    <h4>Project Manager</h4>
+                                 </div>
+                                 <div class="job-text__info">
+                                    Full Time - Singapore
+                                 </div>
+                              </div>
+                              <div class="column-job__choice">
+                                 <div class="column-job__buttons">
+                                    <a href="#" class="column-job__button"
+                                       >Remote</a
+                                    >
+                                    <a href="#" class="column-job__button"
+                                       >Anywhere</a
+                                    >
+                                 </div>
+                                 <div class="column-job__salary">
+                                    $10k - $25k
+                                 </div>
+                              </div>
                            </div>
                         </div>
-                        <div class="popular-job__column column-job">
-                           <div class="column-job__company">
-                              <div class="column-job__name">
+                        <div class="popular-job__view-all">
+                           <a href="#" class="view-all__button">View All </a>
+                           <img
+                              src="/image/popular_job/arrow-right.svg"
+                              alt="arrow-right"
+                              class="view-all__icon"
+                           />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="page__job-categories job-categories">
+               <div class="job-categories__container _container">
+                  <div class="job-categories__body">
+                     <div class="job-categories__title">
+                        <h2 class="job-categories__title-block">
+                           Job Categories
+                        </h2>
+                     </div>
+                     <div class="job-categories__columns">
+                        <div class="job-categories__column">
+                           <div class="job-categories__item categories-item">
+                              <div class="item-icon__wrapper">
                                  <img
-                                    src="/image/popular_job/flat-color-icons_google.svg"
-                                    alt="Google"
-                                 />Google
-                              </div>
-                              <div class="column-job__person">
-                                 <img
-                                    src="/image/popular_job/google_person.svg"
-                                    alt="google"
+                                    class="categories-item__icon"
+                                    src="/image/job_categories/icon/iconoir_bank.svg"
+                                    alt="bank"
                                  />
                               </div>
+                              <div class="categories-item__text">
+                                 <div class="categories-item__title">
+                                    <h4 class="categories-item__title-block">
+                                       Accouting & Finance
+                                    </h4>
+                                    <div class="categories-item__sub-title">
+                                       125 Job Vacancy
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
-                           <div class="column-job__text job-text">
-                              <div class="job-text__title">
-                                 <h4>UX Researcher</h4>
+                           <div class="job-categories__item categories-item">
+                              <div class="item-icon__wrapper">
+                                 <img
+                                    class="categories-item__icon"
+                                    src="/image/job_categories/icon/bi_briefcase.svg"
+                                    alt="briefcase"
+                                 />
                               </div>
-                              <div class="job-text__info">
-                                 Full Time - United States
+                              <div class="categories-item__text">
+                                 <div class="categories-item__title">
+                                    <h4 class="categories-item__title-block">
+                                       Digital Marketing
+                                    </h4>
+                                    <div class="categories-item__sub-title">
+                                       150 Job Vacancy
+                                    </div>
+                                 </div>
                               </div>
-                           </div>
-                           <div class="column-job__choice">
-                              <div class="column-job__buttons">
-                                 <a href="#" class="column-job__button"
-                                    >Remote</a
-                                 >
-                                 <a href="#" class="column-job__button"
-                                    >Anywhere</a
-                                 >
-                              </div>
-                              <div class="column-job__salary">$10k - $25k</div>
                            </div>
                         </div>
-                        <div class="popular-job__column column-job">
-                           <div class="column-job__company">
-                              <div class="column-job__name">
+                        <div class="job-categories__column">
+                           <div class="job-categories__item categories-item">
+                              <div class="item-icon__wrapper">
                                  <img
-                                    src="/image/popular_job/simple-icons_indeed.svg"
-                                    alt="Indeed"
-                                 />Indeed
-                              </div>
-                              <div class="column-job__person">
-                                 <img
-                                    src="/image/popular_job/indeed-person.svg"
-                                    alt="indeed"
+                                    class="categories-item__icon"
+                                    src="/image/job_categories/icon/clarity_devices-line.svg"
+                                    alt="devices"
                                  />
                               </div>
-                           </div>
-                           <div class="column-job__text job-text">
-                              <div class="job-text__title">
-                                 <h4>Project Manager</h4>
+                              <div class="categories-item__text">
+                                 <div class="categories-item__title">
+                                    <h4 class="categories-item__title-block">
+                                       UI/UX Design
+                                    </h4>
+                                    <div class="categories-item__sub-title">
+                                       52 Job Vacancy
+                                    </div>
+                                 </div>
                               </div>
-                              <div class="job-text__info">
-                                 Full Time - Singapore
+                           </div>
+                           <div class="job-categories__item categories-item">
+                              <div class="item-icon__wrapper">
+                                 <img
+                                    class="categories-item__icon"
+                                    src="/image/job_categories/icon/grommet-icons_technology.svg"
+                                    alt="technology"
+                                 />
+                              </div>
+                              <div class="categories-item__text">
+                                 <div class="categories-item__title">
+                                    <h4 class="categories-item__title-block">
+                                       Technical Support
+                                    </h4>
+                                    <div class="categories-item__sub-title">
+                                       350 Job Vacancy
+                                    </div>
+                                 </div>
                               </div>
                            </div>
-                           <div class="column-job__choice">
-                              <div class="column-job__buttons">
-                                 <a href="#" class="column-job__button"
-                                    >Remote</a
-                                 >
-                                 <a href="#" class="column-job__button"
-                                    >Anywhere</a
-                                 >
+                        </div>
+                        <div class="job-categories__column">
+                           <div class="job-categories__item categories-item">
+                              <div class="item-icon__wrapper">
+                                 <img
+                                    class="categories-item__icon"
+                                    src="/image/job_categories/icon/iconoir_google-docs.svg"
+                                    alt="docs"
+                                 />
                               </div>
-                              <div class="column-job__salary">$10k - $25k</div>
+                              <div class="categories-item__text">
+                                 <div class="categories-item__title">
+                                    <h4 class="categories-item__title-block">
+                                       Content Writing
+                                    </h4>
+                                    <div class="categories-item__sub-title">
+                                       150 Job Vacancy
+                                    </div>
+                                 </div>
+                              </div>
                            </div>
+                           <div class="job-categories__item categories-item">
+                              <div class="item-icon__wrapper">
+                                 <img
+                                    class="categories-item__icon"
+                                    src="/image/job_categories/icon/carbon_user-multiple.svg"
+                                    alt="multiple"
+                                 />
+                              </div>
+                              <div class="categories-item__text">
+                                 <div class="categories-item__title">
+                                    <h4 class="categories-item__title-block">
+                                       Human Resource
+                                    </h4>
+                                    <div class="categories-item__sub-title">
+                                       35 Job Vacancy
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="job-categories__column">
+                           <div class="job-categories__item categories-item">
+                              <div class="item-icon__wrapper">
+                                 <img
+                                    class="categories-item__icon"
+                                    src="/image/job_categories/icon/bi_journal-code.svg"
+                                    alt="journal"
+                                 />
+                              </div>
+                              <div class="categories-item__text">
+                                 <div class="categories-item__title">
+                                    <h4 class="categories-item__title-block">
+                                       Accouting & Finance
+                                    </h4>
+                                    <div class="categories-item__sub-title">
+                                       125 Job Vacancy
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="job-categories__item categories-item">
+                              <div class="item-icon__wrapper">
+                                 <img
+                                    class="categories-item__icon"
+                                    src="/image/job_categories/icon/fluent_design-ideas-20-regular.svg"
+                                    alt="design"
+                                 />
+                              </div>
+                              <div class="categories-item__text">
+                                 <div class="categories-item__title">
+                                    <h4 class="categories-item__title-block">
+                                       Art & Illustration
+                                    </h4>
+                                    <div class="categories-item__sub-title">
+                                       52 Job Vacancy
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="page__get-start get-start">
+               <div class="get-start__container _container">
+                  <div class="get-start__body">
+                     <div class="get-start__content">
+                        <div class="get-start__title-block">
+                           <h2 class="get-start__title">Get Start New Job</h2>
+                        </div>
+                        <div class="get-start__text">
+                           create an account so you can get job <br />
+                           information that suits you, and you can <br />
+                           apply the salary your demand.
+                        </div>
+                        <div class="get-start__button-block">
+                           <a href="#" class="get-start__button">
+                              Create an Account
+                           </a>
                         </div>
                      </div>
                   </div>
